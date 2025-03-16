@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 16, 2025 at 09:47 AM
+-- Generation Time: Mar 16, 2025 at 10:26 AM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -34,13 +34,15 @@ CREATE TABLE IF NOT EXISTS `audittrails` (
   `username` varchar(250) NOT NULL,
   `action` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=722 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=724 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `audittrails`
 --
 
 INSERT INTO `audittrails` (`id`, `datetime`, `username`, `action`) VALUES
+(723, '2025-03-16 10:11:26', 'harzixuan', 'Logout'),
+(722, '2025-03-16 10:09:21', 'harzixuan', 'Login'),
 (721, '2025-03-12 14:23:26', 'harzixuan', 'Logout'),
 (720, '2025-03-12 14:22:13', 'harzixuan', 'Login'),
 (719, '2025-03-12 14:22:01', 'harzixuan', 'Logout'),
@@ -304,7 +306,7 @@ CREATE TABLE IF NOT EXISTS `companyprofile` (
 --
 
 INSERT INTO `companyprofile` (`id`, `name`, `profilepicture`) VALUES
-(1, 'weetecprint', 'picture/weetechprint3.png');
+(1, 'WinG', 'picture/CompanyLogo.png');
 
 -- --------------------------------------------------------
 
@@ -420,13 +422,14 @@ CREATE TABLE IF NOT EXISTS `loginouthistory` (
   `login` timestamp NOT NULL,
   `logout` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=147 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=148 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `loginouthistory`
 --
 
 INSERT INTO `loginouthistory` (`id`, `username`, `login`, `logout`) VALUES
+(147, 'harzixuan', '2025-03-16 10:09:21', '2025-03-16 10:11:26'),
 (146, 'harzixuan', '2025-03-12 14:22:13', '2025-03-12 14:23:26'),
 (145, 'harzixuan', '2025-03-12 14:21:30', '2025-03-12 14:22:01'),
 (144, 'harzixuan', '2025-03-12 14:19:32', '2025-03-12 14:21:15'),
