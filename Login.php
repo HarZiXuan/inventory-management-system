@@ -48,9 +48,14 @@ $companyName = $companyProfile['name'];
 	}
 	</style>
 <body>
-<div class="col-md-4">
-<h1 style="color:white; text-align:center; font-size:50px; margin-top:25px; margin-left:695px; font-family:Arial;"><strong><?php echo $companyName; ?></strong></h1>
+
+<div style="text-align: center;">
+    <h1 style="color:white; font-size:50px; margin-top:25px; font-family:Arial;">
+        <strong><?php echo $companyName; ?></strong>
+    </h1>
 </div>
+
+
 <div class="col-md-12">
 	<form class="loginform" action="login2.php" method="post" style="">
 	<?php
